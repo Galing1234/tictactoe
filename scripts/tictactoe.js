@@ -58,7 +58,7 @@ function handleGridClick(event) {
       checkWin(1) ;
 
       if (playingWithComputer) {
-        handleComputerTurn(grids, winningCombinations, gridPositionArray) ;
+        handleComputerTurn(grids, winningCombinations, gridPositionArray, checkWin) ;
         turnX = true ;
       }
     } else if (!turnX && !playingWithComputer) {

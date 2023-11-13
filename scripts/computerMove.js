@@ -1,4 +1,4 @@
-export function handleComputerTurn(grids, winningCombinations, gridPositionArray) {
+export function handleComputerTurn(grids, winningCombinations, gridPositionArray, checkWin) {
   const result = checkWinner(winningCombinations, gridPositionArray) ;
   if (result !== null) {
     if (result === 1) {
@@ -21,6 +21,8 @@ export function handleComputerTurn(grids, winningCombinations, gridPositionArray
   ` ;
 
   gridPositionArray[grid.dataset.gridPosition] = 2 ;
+  checkWinner(winningCombinations, gridPositionArray) ;
+  checkWin(2) ;
 }
 
 function getBestMove(winningCombinations, gridPositionArray) {
