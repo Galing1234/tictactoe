@@ -1,0 +1,70 @@
+body {
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  justify-content: center ;
+  height: 100vh ;
+  overflow: hidden ;
+  font-family: Arial, Helvetica, sans-serif ;
+  background: rgb(0, 0, 0) ;
+}
+
+button {
+  background: rgb(255, 255, 255) ;
+  border: none ;
+  color: rgb(0, 0, 0) ;
+  font-size: 20px ;
+  font-weight: 900 ;
+  padding: 10px 15px ;
+  cursor: pointer ;
+  border-radius: 10px ;
+  box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.5) ;
+}
+
+button:active {
+  box-shadow: none ;
+}
+
+#text {
+  color: rgb(255, 255, 255) ;
+  position: absolute ;
+  top: 10px ;
+  font-size: 40px ;
+  font-weight: bold ;
+}
+
+#board {
+  display: grid ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-gap: 3px ;
+  width: 400px ;
+  height: 400px ;
+  background: rgb(255, 255, 255) ;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) ;
+}
+
+.row {
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 3px ;
+}
+
+.grid {
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+  background: rgb(0, 0, 0) ;
+  cursor: pointer ;
+}
+
+#buttons {
+  margin-top: 10px ;
+}
+
+#player-won {
+  color: rgb(255, 255, 255) ;
+  position: absolute ;
+  bottom: 10px ;
+  font-size: 30px ;
+  font-weight: bold ;
+}
